@@ -1,0 +1,54 @@
+/* iPhone 5, SE (4 pulgadas) */
+@media only screen and (max-width: 320px) {
+    .toggle {
+        width: 30px;
+        left: 8px;
+    }
+    .menu a {
+        font-size: 14px;
+    }
+}
+
+/* iPhone 6, 7, 8 (4.7 pulgadas) */
+@media only screen and (max-width: 375px) {
+    .toggle {
+        width: 32px;
+        left: 12px;
+    }
+    .menu a {
+        font-size: 15px;
+    }
+}
+
+/* iPhone X, XR, 11, 12, 13, 14 Mini (5.4 - 6.1 pulgadas) */
+@media only screen and (max-width: 414px) {
+    .toggle {
+        width: 34px;
+        left: 15px;
+    }
+    .menu a {
+        font-size: 16px;
+    }
+}
+
+/* iPhone 11 Pro Max, 12 Pro Max, 13 Pro Max, 14 Pro Max (6.5 - 6.7 pulgadas) */
+@media only screen and (max-width: 430px) {
+    .toggle {
+        width: 36px;
+        left: 18px;
+    }
+    .menu a {
+        font-size: 17px;
+    }
+}
+
+/* iPads (9.7", 10.2", 10.5", 11", 12.9") */
+@media only screen and (max-width: 834px) {
+    .toggle {
+        width: 40px;
+        left: 20px;
+    }
+    .menu a {
+        font-size: 20px;
+    }
+}

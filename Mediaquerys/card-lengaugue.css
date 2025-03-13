@@ -1,0 +1,78 @@
+.custom-card {
+  opacity: 0;
+  transform: translateX(100px); /* Comienza fuera de la pantalla */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Cuando la tarjeta es visible */
+.custom-card.visible {
+  opacity: 1;
+  transform: translateX(0); /* Se mueve a su posición normal */
+}
+
+/* Para pantallas muy grandes (más de 1440px) */
+@media (min-width: 1441px) {
+  .custom-card {
+    width: 1200px;
+    height: 400px;
+  }
+}
+
+/* Para tablets (768px - 1023px) */
+@media (max-width: 1023px) {
+  .custom-card {
+    width: 600px;
+    height: 320px;
+    padding: 15px;
+  }
+
+  .custom-card .custom-heading {
+    font-size: 20px;
+  }
+}
+
+/* Para dispositivos móviles grandes (481px - 767px) */
+@media (max-width: 767px) {
+  .custom-card {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    border-radius: 6px;
+    transform: translateX(50px); /* Ajusta el inicio para que sea más visible */
+  }
+
+  .custom-card .custom-heading {
+    font-size: 18px;
+  }
+
+  .custom-card .custom-categories span {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+}
+
+/* Para móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  .custom-card {
+    width: 95%;
+    height: auto;
+    padding: 8px;
+    border-radius: 5px;
+    transform: translateX(30px); /* Ajusta el inicio para móviles */
+  }
+
+  .custom-card .custom-heading {
+    font-size: 16px;
+    margin: 16px 0 12px;
+  }
+
+  .custom-card .custom-categories {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .custom-card .custom-categories span {
+    font-size: 9px;
+    padding: 2px 5px;
+  }
+}

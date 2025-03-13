@@ -1,0 +1,89 @@
+/* Ajustes para pantallas muy pequeñas (3.2" - 4.7") */
+@media (max-width: 480px) {
+    .container-information {
+      margin-top: 0;
+      height: 100vh;
+      justify-content: center;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+      margin: 0;
+      margin-top: 200px;
+    }
+  
+    p {
+      font-size: 1em;
+      margin: 0;
+      margin-top: 200px;
+    }
+  }
+  
+  /* Smartphones medianos (4.7" - 6.5") */
+  @media (max-width: 768px) {
+    .container-information {
+      margin-top: 0;
+      height: 100vh;
+    }
+  
+    h1 {
+      font-size: 2.3em;
+      margin-top: 200px;
+    }
+  
+    p {
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Tablets y iPads en vertical (7" - 10") */
+  @media (max-width: 1024px) {
+    .container-information {
+      height: 100vh;
+    }
+  
+    h1 {
+      font-size: 2.5em;
+      margin-top: 50px;
+    }
+  
+    p {
+      font-size: 1.2em;
+      margin-top: 50px;
+    }
+  }
+  
+  /* Tablets y iPads en horizontal */
+  @media (max-width: 1280px) {
+    .container-information {
+      height: 100vh;
+    }
+  
+    h1 {
+      font-size: 2.8em;
+      margin-top: 200px;
+    }
+  
+    p {
+      font-size: 1.2em;
+      margin-top: 50px;
+    }
+  }
+  
+  /* Pantallas grandes (laptops y desktops) */
+  @media (min-width: 1281px) {
+    .container-information {
+      height: 100vh;
+    }
+  
+    h1 {
+      font-size: 3em;
+      margin-top: 200px;
+    }
+  
+    p {
+      font-size: 1.2em;
+      margin-top: 50px;
+    }
+  }

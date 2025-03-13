@@ -1,0 +1,98 @@
+@media (max-width: 1024px) {
+  #ghost {
+    position: absolute;
+    scale: 0.8;
+    margin: 0; 
+    left: 70%;
+    bottom: 10px; 
+    transform: translateX(-50%); 
+    top: 10px;
+  }
+}
+
+/* Para tablets en cualquier orientación (iPads y Galaxy Tabs) */
+@media (min-width: 768px) and (max-width: 1366px) {
+  #ghost {
+    position: absolute;
+    scale: 0.9;
+    margin: 0;
+    left: 80%;
+    top: 170px;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+/* Ajuste para modo horizontal (landscape) en tablets */
+@media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
+  #ghost {
+    top: 120px; 
+    left: 75%; 
+  }
+}
+
+/* Ajuste para modo vertical (portrait) en tablets */
+@media (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
+  #ghost {
+    top: 170px;
+    left: 80%; 
+  }
+}
+/* Para teléfonos Android en cualquier orientación */
+@media (min-width: 360px) and (max-width: 480px) {
+  #ghost {
+    position: absolute;
+    scale: 0.8;
+    margin: 0;
+    left: 70%;
+    top: 10px;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+/* Ajuste para modo horizontal (landscape) en teléfonos Android */
+@media (min-width: 568px) and (max-width: 926px) and (orientation: landscape) {
+  #ghost {
+    top: 190px;
+    left: 65%;
+    scale: 0.7; 
+  }
+}
+
+/* Ajuste para modo vertical (portrait) en teléfonos Android */
+@media (min-width: 360px) and (max-width: 480px) and (orientation: portrait) {
+  #ghost {
+    top: 10px;
+    left: 70%;
+    scale: 0.8;
+  }
+}
+/* Para tablets Android en cualquier orientación */
+@media (min-width: 600px) and (max-width: 1440px) {
+  #ghost {
+    position: absolute;
+    scale: 0.9;
+    margin: 0;
+    left: 80%;
+    top: 170px;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+/* Ajuste para modo horizontal (landscape) en tablets Android */
+@media (min-width: 768px) and (max-width: 1440px) and (orientation: landscape) {
+  #ghost {
+    top: 190px;
+    left: 75%;
+  }
+}
+
+/* Ajuste para modo vertical (portrait) en tablets Android */
+@media (min-width: 600px) and (max-width: 1440px) and (orientation: portrait) {
+  #ghost {
+    top: 170px;
+    left: 80%;
+  }
+}

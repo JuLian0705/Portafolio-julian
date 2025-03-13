@@ -1,0 +1,201 @@
+/* Para pantallas muy grandes (más de 1440px) */
+@media (min-width: 1441px) {
+  .card {
+    width: 1200px;
+    height: 450px;
+    margin-top: -30px; /* 🔼 Subimos un poco */
+  }
+}
+/* Para iPad Pro (11" y 12.9") y iPad Air (10.9") en modo vertical */
+@media (min-width: 820px) and (max-width: 1024px) and (orientation: portrait) {
+  .card {
+    width: 650px;
+    height: 340px;
+    padding: 20px;
+    margin-top: -200px; /* 🔼 Se sube moderadamente */
+  }
+
+  .content .heading {
+    font-size: 30px;
+  }
+
+  .content .para {
+    font-size: 16px;
+  }
+}
+
+/* Para iPad Pro (11" y 12.9") y iPad Air (10.9") en modo horizontal */
+@media (min-width: 820px) and (max-width: 1024px) and (orientation: landscape) {
+  .card {
+    width: 750px; /* Se hace un poco más ancha */
+    height: 360px;
+    padding: 20px;
+    margin-top: -1050px; /* 🔼 Se mantiene estable */
+  }
+
+  .content .heading {
+    font-size: 32px;
+  }
+
+  .content .para {
+    font-size: 18px;
+  }
+}
+
+/* Para tablets generales (768px - 1023px) en modo vertical */
+@media (max-width: 1023px) and (orientation: portrait) {
+  .card {
+    width: 600px;
+    height: 320px;
+    padding: 15px;
+    margin-top: -450px; /* 🔼 Se mantiene moderado */
+  }
+
+  .content .heading {
+    font-size: 28px;
+  }
+
+  .content .para {
+    font-size: 14px;
+  }
+}
+
+/* Para tablets generales (768px - 1023px) en modo horizontal */
+@media (max-width: 1023px) and (orientation: landscape) {
+  .card {
+    width: 700px; /* Se ajusta el ancho */
+    height: 340px;
+    padding: 15px;
+    margin-top: -450px; /* 🔼 No se mueve demasiado */
+  }
+
+  .content .heading {
+    font-size: 28px;
+  }
+
+  .content .para {
+    font-size: 15px;
+  }
+}
+
+/* Para dispositivos móviles grandes (481px - 767px) */
+@media (max-width: 767px) {
+  .card {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    border-radius: 16px;
+    margin-top: -500px; /* 🔽 Bajamos más */
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .content .heading {
+    font-size: 22px;
+  }
+
+  .content .para {
+    font-size: 12px;
+  }
+}
+
+/* Para móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  .card {
+    width: 95%;
+    height: auto;
+    padding: 8px;
+    border-radius: 12px;
+    margin-top: 60px; /* 🔽 Bajamos aún más en pantallas pequeñas */
+  }
+
+  .content {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .content .heading {
+    font-size: 18px;
+  }
+
+  .content .para {
+    font-size: 10px;
+  }
+}
+/* 🔹 Teléfonos Pequeños (5" a 5.5") - iPhone SE, Galaxy J2, etc. */
+@media (max-width: 320px) {
+  .card {
+    width: 95%;
+    height: auto;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: -100px;
+  }
+
+  .content .heading {
+    font-size: 14px;
+  }
+
+  .content .para {
+    font-size: 10px;
+  }
+}
+
+/* 🔹 Teléfonos Medianos (5.5" a 6.1") - iPhone 7, 8, XR, Galaxy A10, etc. */
+@media (min-width: 321px) and (max-width: 375px) {
+  .card {
+    width: 92%;
+    height: auto;
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: -50px;
+  }
+
+  .content .heading {
+    font-size: 16px;
+  }
+
+  .content .para {
+    font-size: 12px;
+  }
+}
+
+/* 🔹 Teléfonos Grandes (6.1" a 6.7") - iPhone 11, 12, 13, 14, Galaxy A51, A71, S21 */
+@media (min-width: 376px) and (max-width: 430px) {
+  .card {
+    width: 90%;
+    height: auto;
+    padding: 12px;
+    border-radius: 14px;
+    margin-top: -380px;
+  }
+
+  .content .heading {
+    font-size: 18px;
+  }
+
+  .content .para {
+    font-size: 13px;
+  }
+}
+
+/* 🔹 Phablets y Tablets Pequeñas (7" a 8") - iPad Mini, Galaxy Tab A 8.0" */
+@media (min-width: 431px) and (max-width: 768px) {
+  .card {
+    width: 85%;
+    height: auto;
+    padding: 15px;
+    border-radius: 16px;
+    margin-top: -200px;
+  }
+
+  .content .heading {
+    font-size: 20px;
+  }
+
+  .content .para {
+    font-size: 14px;
+  }
+}
