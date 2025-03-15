@@ -17,6 +17,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
 
       if (response.ok) {
         form.reset();
+        showSuccessPopup();
         setTimeout(() => {
           document.getElementById("successMessage").style.display = "block";
         }, 5000); // Espera 5 segundos antes de mostrar el mensaje de éxito
