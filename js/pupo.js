@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Ocultar el popup al inicio
+    document.getElementById("successPopup").style.display = "none";
+});
+
 function showSuccessPopup() {
     // Mostrar el loader primero
     document.getElementById("loadingSpinner").style.display = "flex";
