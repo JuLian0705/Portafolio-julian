@@ -14,8 +14,9 @@ body {
   justify-content: center;
   align-items: flex-end;
   gap: 5px;
-  margin-left: 600px;
-  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 .loader__bar {
@@ -83,10 +84,11 @@ body {
   height: 100%;
   background-color: white;
   z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
+  display: flex;
+  justify-content: flex-start; /* Mover a la izquierda */
+  align-items: center;         /* Centrado vertical */
+  padding-left: 1000%; /* Puedes ajustar esto si quieres que no esté tan pegado */
 }
 
 body.loading {
