@@ -13,6 +13,16 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>  
 </head>
+<div id="loader-wrapper">
+  <div class="loader">
+    <div class="loader__bar"></div>
+    <div class="loader__bar"></div>
+    <div class="loader__bar"></div>
+    <div class="loader__bar"></div>
+    <div class="loader__bar"></div>
+    <div class="loader__ball"></div>
+  </div>
+</div>
 <body>
   <nav class="navbar">
 </nav>
@@ -108,7 +118,7 @@
     </div>
   </div>
 
-<!-- From Uiverse.io by mrhyddenn --> 
+
 <a href="./cv/Hoja de vida Actualizada portafolio.pdf" target="_blank">
   <button class="button">
     <span class="button_lg">
@@ -117,7 +127,6 @@
     </span>
   </button>
 </a>
-<!-- Formulario -->
 <div class="form-card2">
   <form class="form" id="contactForm">
     <p class="form-heading">Contáctame</p>
@@ -139,7 +148,6 @@
   <div class="loader" id="loadingSpinner" style="display: none;">
     <div class="justify-content-center jimu-primary-loading"></div>
   </div>
-<!-- Popup de éxito -->
 <div id="successPopup" class="popup">
   <div class="popup-content">
     <i class="ri-close-line close-popup"></i>
@@ -148,6 +156,25 @@
 </div>
 
 
+
+<script>
+  document.body.classList.add("loading");
+
+  window.addEventListener("load", function () {
+    const loader = document.getElementById("loader-wrapper");
+
+    // Esperar 5 segundos antes de ocultar el loader
+    setTimeout(() => {
+      loader.style.opacity = "0";
+      loader.style.transition = "opacity 0.5s ease";
+
+      setTimeout(() => {
+        loader.style.display = "none";
+        document.body.classList.remove("loading");
+      }, 500); // Tiempo para el desvanecimiento
+    }, 5000); // Mantener el loader visible por 5 segundos
+  });
+</script>
 
 
  
